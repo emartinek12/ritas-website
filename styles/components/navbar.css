@@ -1,60 +1,87 @@
 nav {
-position: sticky;
-top: 0;
-background-color: white;
-/* border-radius:0 0 20px 20px; */
-z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  flex-wrap: wrap;
+  padding: 10px 80px 4px;
 }
 
-nav .container {
-width: 100%;
-margin: 0 auto;
-text-align: center;
-padding: 10px 0px;
+nav ul {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-nav .container ul {
-margin-bottom: 0px;
-padding: 0;
-display: flex;
-justify-content: space-between;
-}
-nav .container ul li {
-display: inline-block;
-border-radius:5px;
+nav  ul li {
+  display: inline-block;
+  border-radius:5px;
+  text-decoration: none;
 }
 
-nav .container ul li a {
-display: inline-block;
-text-decoration: none;
-padding: 10px 30px;
-color: black;
-border-radius: 30px;
+
+nav  ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: black;
+  border-radius: 30px;
+  }
+
+nav  ul li a:hover{
+  background-color: rgba(244, 165, 64, 0.5);
+  border-radius:30px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
 }
 
-nav .container ul li a:hover{
-background-color: rgba(244, 165, 64, 0.5);
-border-radius:30px;
-transition: 0.3s;
+nav  ul li.active {
+  background-color: orange;
+  border-radius:30px;
+  transition: 0.3s;
+}
+nav  ul li.active a {
+  color: #ffffff;
 }
 
-nav .container ul li.active {
-background-color: orange;
-border-radius:30px;
-transition: 0.3s;
+.hamburger {
+  background-color: transparent;
+  color: black;
+  border: 0;
+  font-size: 24px;
+  display: none;
 }
-nav .container ul li.active a {
-color: #ffffff;
+
+.hamburger:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 768px) {
-  nav .container {
+  /* nav .container {
   padding: 8px 8px;
-}
-  nav .container ul li a {
+} */
+
+  /* nav .container ul li a {
     padding: 10px 5px;
+  } */
+
+  .hamburger {
+    display: block;
   }
 
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+  .nav-ul.show {
+    display: flex;
+  }
 }
 
 

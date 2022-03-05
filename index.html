@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/6223108b61.js" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@100;400;600&display=swap');
     </style>
@@ -18,8 +19,11 @@
 <!-- Page's content = displayed on the page -->
 <!-- Navbar -->
   <nav>
-    <div class="container">
-      <ul>
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- <div class="container"> -->
+      <ul class="nav-ul" id="nav-ul">
         <li class="homepage active"><a href="#homepage">Home</a></li>
         <li class="ubermich"><a href="#ubermich">&Uuml;ber mich</a></li>
         <li class="gitarre"><a href="#gitarre">Gitarre</a></li>
@@ -27,7 +31,7 @@
         <li class="unterricht"><a href="#unterricht">Unterricht</a></li>
         <li class="kontakt"><a href="#kontakt">Kontakt</a></li>
       </ul>
-    </div>
+    <!-- </div> -->
   </nav>
 
   <!-- Home -->
@@ -195,50 +199,42 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-4">
               <form action="https://formsubmit.co/info@ritamarkgraf.de" method="POST">
-              <input type="hidden" name="_captcha" value="false">
-                <div class="form-row row row-cols">
-                  <div class="col-6 form-group mb-3">
-                    <label for="first-name">Vorname</label>
-                    <input type="text" class="form-control" id="first-name" name="Vorname" required>
+                <input type="hidden" name="_captcha" value="false">
+                  <div class="form-row row row-cols">
+                    <div class="col-6 form-group mb-3">
+                      <label for="first-name">Vorname</label>
+                      <input type="text" class="form-control" id="first-name" name="Vorname" required>
+                    </div>
+                    <div class="col-6 form-group mb-3">
+                      <label for="last-name">Nachname</label>
+                      <input type="text" class="form-control" id="last-name">
+                    </div>
                   </div>
-                  <div class="col-6 form-group mb-3">
-                    <label for="last-name">Nachname</label>
-                    <input type="text" class="form-control" id="last-name">
+                  <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" name="Nachname" required>
                   </div>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" name="Nachname" required>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="phonenumber">Telefonnummer</label>
-                  <input type="phonenumber" class="form-control" id="telefon" name="Telefonnummer" >
-                </div>
-                <div class="form-group mb-3">
-                  <label for="source">Interessiert an?</label>
-                  <select id="source" class="form-control">
-                    <option value="" name="Guittare">Gitarrenunterricht</option>
-                    <option value="" name="Querflöte">Querfl&ouml;tenunterricht</option>
-                  </select>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Nachricht" required></textarea>
-                </div>
-                <input type="submit" value="Senden" class="btn btn-primary btn-lg w-100" onSubmit="alert('Vielen Dank für Ihre Nachricht.');" >
+                  <div class="form-group mb-3">
+                    <label for="phonenumber">Telefonnummer</label>
+                    <input type="phonenumber" class="form-control" id="telefon" name="Telefonnummer" >
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Nachricht" required></textarea>
+                  </div>
+                  <input type="submit" value="Senden" class="btn btn-primary btn-lg w-100" onSubmit="alert('Vielen Dank für Ihre Nachricht.');" >
               </form>
             </div>
           </div>
         </div>
       <p class="contact-details"> <strong>Rita Markgraf</strong><br>
-      Seeriederstr. 14a<br>
-      81675 M&uuml;nchen<br>
-      089/4481681<br>
-      <a href="info@ritamarkgraf.de">info@ritamarkgraf.de</a>
+        Seeriederstr. 14a<br>
+        81675 M&uuml;nchen<br>
+        089/4481681<br>
+        <a href="info@ritamarkgraf.de">info@ritamarkgraf.de</a>
       </p>
     </div>
   </section>
-</div>
 
   <!-- footer -->
 

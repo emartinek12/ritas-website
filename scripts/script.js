@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .container ul li");
+const navLi = document.querySelectorAll("nav ul li");
 window.onscroll = () => {
   var current = "";
 
@@ -16,3 +16,13 @@ window.onscroll = () => {
     }
   });
 };
+
+
+console.log("works maybe")
+const hamburger = document.getElementById('hamburger');
+const navUL = document.getElementById('nav-ul');
+
+hamburger.addEventListener('click', () => {
+  navUL.classList.toggle('show');
+  console.log("works")
+});
