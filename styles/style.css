@@ -363,6 +363,18 @@ section{
     margin: 40px auto;
   }
 
+  .header {
+    display: none;
+  }
+
+  .image-homepage {
+    width: 50%;
+  }
+
+  .rita-flute {
+    display: none;
+  }
+
   .image-homepage {
     margin-bottom: 20px;
   }
