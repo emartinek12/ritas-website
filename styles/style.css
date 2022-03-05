@@ -68,6 +68,7 @@ section{
   display:flex;
   justify-content:center;
   align-items:center;
+  /* visibility: hidden; */
 }
 
 .rita-flute {
@@ -220,7 +221,7 @@ section{
 .unterricht-preise {
   grid-area: unterricht-preise;
   border-radius: 51px;
-  background-color: #FC9C0D;
+  background-color: #FFDDAB;
   padding: 40px;
   width: 75%;
   margin: 0 auto;
