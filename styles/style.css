@@ -93,6 +93,7 @@ section{
 
 .ubermich-section {
   display: flex;
+  width: 100%;
   margin: 60px 60px;
 }
 
@@ -389,6 +390,8 @@ section{
 
   .ubermich-section {
     display: block;
+    margin: 0px 25px;
+    line-height: 40%;
   }
 
   .timeline {
