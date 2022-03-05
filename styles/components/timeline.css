@@ -1,0 +1,77 @@
+.uber-mich-title h2 {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+
+/* Timeline */
+
+.timeline {
+  border-left: 4px solid #FC9C0D;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  /* background: fade(@color-light, 3%); */
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  padding-left: 20px;
+  list-style: none;
+  text-align: left;
+  max-width: 80%;
+}
+
+.timeline p {
+  text-align: left !important;
+  padding-left: 10px;
+}
+
+#list {
+  margin-bottom: 0 !important;
+}
+
+#spacing-top {
+  margin-top: 20px;
+}
+
+.event {
+  border-bottom: 1px dashed fade(#FC9C0D, 10%);
+  padding-bottom: (4px * 0.5);
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  box-shadow: 0 0 0 4px fade(#FC9C0D,100%);
+  left: (4px + 4px + (11px * 0.35)) * -1;
+  background: #FC9C0D;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  content: "";
+  top: 5px;
+  left: -30px;
+}
+
+.event:before {
+  left: (((120px * 0.6) + 4px + 4px + 11px + (4px * 2)) * 1.5) * -1;
+  color: fade(#FC9C0D, 40%);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
