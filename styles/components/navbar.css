@@ -63,6 +63,8 @@ nav ul li.active a {
   outline: none;
 }
 
+/* mobile styling */
+
 @media only screen and (max-width: 768px) {
   i {
     position: absolute;
@@ -75,10 +77,15 @@ nav ul li.active a {
     background-color: transparent;
   }
 
+  nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
   .logo-rita {
     display: block;
-    width: 175px;
-    padding-top: 10px;
+    width: 160px;
+    padding-top: 4px;
     z-index: -1;
   }
 
@@ -91,7 +98,10 @@ nav ul li.active a {
     flex-direction: column;
     align-items: end;
     margin-bottom: 0px;
-    /* margin-top: 50px; */
+    width: 155px;
+    margin-left: 222px;
+    background-color: #ffffff;
+    border-radius: 20px;
   }
 
   nav ul li.active {

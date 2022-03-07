@@ -34,3 +34,11 @@ $(".nav-ul a").click(function () {
 
   $(".nav-ul").removeClass('show');
 });
+
+// change navbar color when scrolling
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
