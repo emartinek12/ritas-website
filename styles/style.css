@@ -27,6 +27,10 @@ h1, h2 {
   margin-bottom: 30px;
 }
 
+
+section{
+  min-height: 100vh;
+}
 /* HOME */
 
 .image-homepage{
