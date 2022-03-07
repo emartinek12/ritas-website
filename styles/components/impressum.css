@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.gestaltung {
+  text-decoration: underline;
+  color: black;
+}
+
+.gestaltung:hover {
+  color: orange;
+}
+
 .modalh1 {
   margin: 0 0 1rem 0;
 }

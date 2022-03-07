@@ -353,14 +353,6 @@ section{
     font-weight: bold;
 }
 
-.gestaltung a {
-  text-decoration: underline;
-  color: black;
-}
-
-.gestaltung a:hover {
-  color: orange;
-}
 /* Popup box BEGIN */
 
 @media only screen and (max-width:992px) {
