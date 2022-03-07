@@ -77,6 +77,10 @@ section{
   align-items:center;
 }
 
+.rita-flute-mobile {
+    display: none;
+ }
+
 .text {
   grid-area: text;
   display:flex;
@@ -376,14 +380,18 @@ section{
 
   .image-homepage {
     width: 50%;
+    margin-bottom: 20px;
   }
 
   .rita-flute {
     display: none;
   }
 
-  .image-homepage {
-    margin-bottom: 20px;
+  .rita-flute-mobile {
+    /* display: block; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
 
   .ubermich-section {
