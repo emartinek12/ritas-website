@@ -358,9 +358,6 @@ section{
 
 
 @media only screen and (max-width: 768px) {
-  .section {
-    min-height: 100vh;
-  }
 
   .container-home {
     display: block;
@@ -390,12 +387,12 @@ section{
 
   .ubermich-section {
     display: block;
-    margin: 0px 25px;
+    margin: 60px 0;
     line-height: 40%;
   }
 
   .timeline {
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .item.right {
