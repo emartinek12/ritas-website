@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Musikunterricht in M&uuml;nchen</title>
+    <title>Rita Markgraf - Gitarrenunterricht & Querflötenunterricht München</title>
     <meta name="description" content="Rita Markgraf Unterricht für Gitarre und Querflöte in München">
     <meta charset="utf-8">
     <link rel="icon" href="music.png" type="image/png">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/6223108b61.js" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@100;400;600&display=swap');
     </style>
@@ -18,16 +19,19 @@
 <!-- Page's content = displayed on the page -->
 <!-- Navbar -->
   <nav>
-    <div class="container">
-      <ul>
-        <li class="homepage active"><a href="#homepage">Home</a></li>
-        <li class="ubermich"><a href="#ubermich">&Uuml;ber mich</a></li>
-        <li class="gitarre"><a href="#gitarre">Gitarre</a></li>
-        <li class="querflote"><a href="#querflote">Querfl&ouml;te</a></li>
-        <li class="unterricht"><a href="#unterricht">Unterricht</a></li>
-        <li class="kontakt"><a href="#kontakt">Kontakt</a></li>
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- <div class="container"> -->
+      <ul class="nav-ul" id="nav-ul">
+        <li class="nav-item homepage active"><a href="#homepage">Home</a></li>
+        <li class="nav-item ubermich"><a href="#ubermich">&Uuml;ber mich</a></li>
+        <li class="nav-item gitarre"><a href="#gitarre">Gitarre</a></li>
+        <li class="nav-item querflote"><a href="#querflote">Querfl&ouml;te</a></li>
+        <li class="nav-item unterricht"><a href="#unterricht">Unterricht</a></li>
+        <li class="nav-item kontakt"><a href="#kontakt">Kontakt</a></li>
       </ul>
-    </div>
+    <!-- </div> -->
   </nav>
 
   <!-- Home -->
@@ -60,42 +64,39 @@
       </div>
 
       <div id="content" class="item right">
-        <h2 class="uber-mich-title">Über Mich</h2>
-
+        <h2 class="uber-mich-title">Über mich</h2>
         <ul class="timeline">
           <li class="event">
-            <p>seit 2004 bin ich als selbständige Musiklehrerin tätig</p>
+            <p>1969 geboren in Landshut</p>
           </li>
           <li class="event">
-            <p>während und nach meinem Studium unterrichtete ich bei verschiedenen
-              Musikschulen, z.B. in Dachau und Waldkraiburg</p>
+            <p>1975 musikalische Früherziehung in der städt. Musikschule Landshut</p>
           </li>
           <li class="event">
-            <p id="list">von 1992 – 1998 studierte ich am Richard- Strauss- Konservatorium München</p>
+            <p>1976 - 1982 Sopran- und Altblockflötenunterricht</p>
+          </li>
+          <li class="event">
+            <p>1982 erste Beschäftigung mit der Gitarre, zuerst Liedbegleitung, dann Unterricht in klassischer Gitarre</p>
+          </li>
+          <li class="event">
+            <p>1985 Querflötenunterricht</p>
+          </li>
+          <li class="event">
+            <p>1990 - 1992 Berufsfachschule für Musik in Plattling</p>
+          </li>
+          <li class="event">
+            <p id="list">1992 - 1998 Studium am Richard-Strauss-Konservatorium in München</p>
             <ul>
-              <li>Gitarre bei Barbara Probst- Polasek</li>
-              <li>Querflöte bei Elisabeth Weinzierl- Wächter</li>
-              <li>Abschluss: staatlich geprüfte Lehrerin für Gitarre und Querflöte</li>
+              <li>Gitarre bei Barbara Probst-Polasek</li>
+              <li>Querflöte bei Elisabeth Weinzierl-Wächter</li>
+              <li>Abschluss: staatl. geprüfte Lehrerin für Gitarre und Querflöte</li>
             </ul>
           </li>
           <li class="event" id="spacing-top">
-            <p>von 1990 - 1992 besuchte ich die Berufsfachschule für Musik in Plattling
-            </p>
+            <p>seit 1995 Unterricht in verschiedenen Musikschulen, z.B. Dachau, Waldkraiburg</p>
           </li>
           <li class="event">
-            <p> mit 13 Jahren begann ich das Gitarrespielen, zuerst Liedbegleitung im
-              Selbststudium, mit 18 Jahren hatte ich meinen ersten Unterricht in klassischer Gitarre
-
-            </p>
-          </li>
-          <li class="event">
-            <p>danach lernte ich dort 4 Jahre Sopranblockflöte und 2 Jahre Altblockflöte
-            </p>
-          </li>
-          <li class="event">
-          <p> mit 5 Jahren besuchte ich die musikalische Früherziehung in der städt.
-            Musikschule Landshut
-          </p>
+            <p>seit 2004 selbstständig tätig als Musiklehrerin</p>
           </li>
         </ul>
       </div>
@@ -109,20 +110,20 @@
       <div class="gitarre-text">
         <h2>Gitarre</h2>
         <p>
-          Die Gitarre ist ein wunderbares Instrument. Der Klang und ihre Vielfalt haben mich sofort begeistert. Als Jugendliche
-          habe ich mit Liedbegleitung begonnen. Singen macht Freude, und wie sch&ouml;n ist es, sich dabei auf der Gitarre zu
+          Die <strong>Gitarre</strong> ist ein wunderbares Instrument. Der Klang und ihre Vielfalt haben mich sofort begeistert. Als Jugendliche
+          habe ich mit <strong>Liedbegleitung</strong> begonnen. Singen macht Freude, und wie sch&ouml;n ist es, sich dabei auf der Gitarre zu
           begleiten. <br><br>
-          Bei mir lernen die Sch&uuml;ler:innen Akkorde, Schlagrhythmen und Zupfmuster und ich gehe dabei gerne auf ihre individuellen
-          Songw&uuml;nsche ein. <br><br>
-          An der Berufsfachschule f&uuml;r Musik und im Studium habe ich mich intensiv mit der Klassischen Gitarre besch&auml;ftigt und ihre
-          Vielfalt und Ausdrucksm&ouml;glichkeiten lieben gelernt. Das Repertoire reicht dabei von der Renaissance bis zur Moderne und
-          umfasst auch Rock, Pop, Flamenco und Jazz. <br><br>
-          Kinder haben oft noch zu kleine H&auml;nde und Arme, um auf der großen Gitarre spielen zu k&ouml;nnen. Daf&uuml;r gibt es kleinere
-          Gitarren. Bei mir stehen 3 kleinere Leihinstrumente zur Verf&uuml;gung.
+          Akkorde, Schlagrhythmen und Zupfmuster sind fester Bestandteil des Unterrichts. Ich gehe gerne auf die individuellen
+          Songwünsche der Schüler ein. <br><br>
+          An der Berufsfachschule für Musik und im Studium habe ich mich intensiv mit der <strong>Klassischen Gitarre</strong> beschäftigt und ihre
+          Vielfalt und Ausdrucksmöglichkeiten lieben gelernt. Das Repertoire reicht dabei von der Renaissance bis zur Moderne und
+          umfasst auch Rock,Pop, Flamenco und Jazz.<br><br>
+          Kinder haben oft noch zu kleine Hände und Arme, um auf der großen Gitarre spielen zu können. Dafür gibt es kleinere
+          Gitarren. Bei mir stehen 3 kleinere Leihinstrumente zur Verfügung.
         </p>
       </div>
       <div class="gitarre-bild">
-        <img src="images/girlguitar.jpg" alt="Mädchen mit Guitarre" class="guitargirl">
+        <img src="images/guitarclass.jpg" alt="Guitarrenunterricht" class="guitargirl">
       </div>
     </div>
   </section>
@@ -137,10 +138,10 @@
           Was ich an der Querfl&ouml;te liebe, ist ihr wundersch&ouml;ner Klang. Das hat mich als Jugendliche inspiriert, dieses Instrument
           zu lernen. <br><br>
           Die Fl&ouml;te ist ein Soloinstrument, aber das heißt nicht, dass man immer alleine spielen muss. Ich begleite meine Sch&uuml;ler:innen
-          gerne auf der Gitarre. Mittlerweile gibt es eine F&uuml;lle an Fl&ouml;tenliteratur mit verschiedenen Begleitinstrumenten auf CD.
+          gerne auf der Gitarre. Mittlerweile gibt es eine F&uuml;lle an Fl&ouml;tenliteratur mit verschiedenen Begleitinstrumenten auf CD
           (Klavier, Orchester, Band) Von der Klassik &uuml;ber Jazz zum Pop. <br><br>
           Fr&uuml;her konnten Kinder erst die Querfl&ouml;te erlernen, wenn ihre Arme und H&auml;nde groß genug waren, um die große Querfl&ouml;te zu
-          spielen. Heute gibt es f&uuml;r Kinder spezielle Instrumente (Fl&ouml;te mit gebogenem Kopf, Waveline), die es Ihnen erm&ouml;glichen,
+          spielen. Heute gibt es f&uuml;r Kinder spezielle Instrumente (Fl&ouml;te mit gebogenem Kopf, Waveline), die es ihnen erm&ouml;glichen,
           das Instrument fr&uuml;her zu erlernen. Sie m&uuml;ssen zu Beginn keine Fl&ouml;te kaufen, es gibt M&ouml;glichkeiten, ein Instrument zu
           leihen oder einen Leihkauf zu t&auml;tigen. <br><br>
           Zu all diesen Fragen berate ich Sie gerne.
@@ -151,33 +152,44 @@
       </div>
     </div>
   </section>
+
   <!-- Unterricht -->
   <section class="group white" id="unterricht">
     <div class="container-unterricht">
       <div class="unterricht-text">
         <h2>Unterricht</h2>
         <p>
-          Mir ist es wichtig, meinen Sch&uuml;ler:innen die Freude am Instrument und am Musizieren zu vermitteln. <br><br> Neben einer fundierten
-          Technik und der intensiven Arbeit am Klang beinhaltet mein Unterricht grundlegende Kenntnisse in der Musiktheorie, vom
-          Blatt Spiel, musikalisches Zusammenspiel und eine große Repertoireauswahl. <br><br> Jede:r Sch&uuml;ler:in hat mindestens einmal im Jahr
-          die M&ouml;glichkeit, an einem Sch&uuml;lerkonzert teilzunehmen. Ich gestalte meinen Unterricht sehr individuell, ausgerichtet auf
-          die M&ouml;glichkeiten und Vorlieben der Sch&uuml;ler:innen. <br><br> Ich biete Gitarren- und Querfl&ouml;tenunterricht f&uuml;r Kinder ab dem Schulalter,
-          Jugendliche und Erwachsene, Anf&auml;nger und Fortgeschrittene an. Zum Kennenlernen biete ich ein ca. 20-min&uuml;tiges
-          kostenloses Treffen an. <br><br> Der Unterrichtsraum ist mit &ouml;ffentlichen Verkehrsmitteln gut zu erreichen: Haltestelle
-          Max-Weber-Platz, Johannisplatz (U4/5, Tram 15/19/25)
+          Mir ist es wichtig, meinen Schülern die Freude am Instrument und am Musizieren zu vermitteln.
+          Neben einer fundierten Technik und der intensiven Arbeit am Klang beinhaltet mein Unterricht grundlegende Kenntnisse in
+          der Musiktheorie, Vom-Blatt-Spiel, musikalisches Zusammenspiel und eine große Repertoireauswahl.
+          Jeder Schüler hat mindestens 1 mal im Jahr die Möglichkeit, an einem Schülerkonzert teilzunehmen.
+          Der Unterricht wird sehr individuell gestaltet, ausgerichtet auf die Möglichkeiten und Vorlieben der Schüler.
+          <br>
+          <br>
+          Ich biete <strong>Gitarren- und Querflötenunterricht</strong> für Kinder ab dem Schulalter, Jugendliche und Erwachsene, Anfänger und
+          Fortgeschrittene an.
+          <br>
+          Zum <strong>Kennenlernen</strong> gibt es die Möglichkeit eines kurzen <nobr>(15-20 min)</nobr> kostenlose Treffens.
+          <br><br>
+          Der Unterrichtsraum ist mit &ouml;ffentlichen Verkehrsmitteln gut zu erreichen: Haltestelle
+          Max-Weber-Platz, Johannisplatz <nobr>(U4/5, Tram 15/19/25)</nobr>
         </p>
       </div>
     <div class="unterricht-preise">
       <h2>Preise</h2>
       <p><strong>Fortlaufender Unterricht:</strong></p>
-      <p><u>Einzelunterricht</u><br> 4 x 30 min |  80 € pro Monat <br> 4x 45 min | 110 € pro Monat </p>
-      <p><u>2er Gruppe</u> <br> 4 x 45 min | 60 € pro Monat p.P. </p>
+      <p><u>Einzelunterricht</u><br> 30 min pro Woche |  80 € pro Monat <br> 45 min pro Woche | 110 € pro Monat </p>
+      <p><u>2er Gruppe</u> <br> 45 min pro Woche | 60 € pro Monat pro Schüler </p>
       <hr>
       <p><strong>Einzelstunden:</strong></p>
-      <pre><p>30 min | 30 € <br>45 min | 40 €</p></pre>
+      <p>30 min | 30 € <br>45 min | 40 €</p>
+      <p>In den Ferien findet kein Unterricht statt.</p>
     </div>
   </div>
   </section>
+
+<!-- Kontakt -->
+
   <section class="group orange" id="kontakt">
     <div class="kontakt-container">
       <h2>Kontakt</h2>
@@ -187,59 +199,141 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-4">
               <form action="https://formsubmit.co/info@ritamarkgraf.de" method="POST">
-              <input type="hidden" name="_captcha" value="false">
-                <div class="form-row row row-cols">
-                  <div class="col-6 form-group mb-3">
-                    <label for="first-name">Vorname</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="Anna" required>
+                <input type="hidden" name="_captcha" value="false">
+                  <div class="form-row row row-cols">
+                    <div class="col-6 form-group mb-3">
+                      <label for="first-name">Vorname</label>
+                      <input type="text" class="form-control" id="first-name" name="Vorname" required>
+                    </div>
+                    <div class="col-6 form-group mb-3">
+                      <label for="last-name">Nachname</label>
+                      <input type="text" class="form-control" id="last-name">
+                    </div>
                   </div>
-                  <div class="col-6 form-group mb-3">
-                    <label for="last-name">Nachname</label>
-                    <input type="text" class="form-control" id="last-name" placeholder="Waldorf">
+                  <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" name="Nachname" required>
                   </div>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="anna@gmail.com" required>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="phonenumber">Telefonnummer</label>
-                  <input type="phonenumber" class="form-control" id="telefon" placeholder="+49-0000-000-000">
-                </div>
-                <div class="form-group mb-3">
-                  <label for="source">Interesiert an?</label>
-                  <select id="source" class="form-control">
-                    <option value="">Gitarren Unterricht</option>
-                    <option value="">Querfl&ouml;ten Unterricht</option>
-                  </select>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                </div>
-                <input type="submit" value="Senden!" class="btn btn-primary btn-lg w-100" onSubmit="alert('Vielen Dank für Ihre Nachricht.');" >
+                  <div class="form-group mb-3">
+                    <label for="phonenumber">Telefonnummer</label>
+                    <input type="phonenumber" class="form-control" id="telefon" name="Telefonnummer" >
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Nachricht" required></textarea>
+                  </div>
+                  <input type="submit" value="Senden" class="btn btn-primary btn-lg w-100" onSubmit="alert('Vielen Dank für Ihre Nachricht.');" >
               </form>
             </div>
           </div>
         </div>
       <p class="contact-details"> <strong>Rita Markgraf</strong><br>
-      Seeriederstr. 14a<br>
-      81675 M&uuml;nchen<br>
-      089/4481681<br>
-      <a href="info@ritamarkgraf.de">info@ritamarkgraf.de</a>
+        Seeriederstr. 14a<br>
+        81675 M&uuml;nchen<br>
+        089/4481681<br>
+        <a href="info@ritamarkgraf.de">info@ritamarkgraf.de</a>
       </p>
     </div>
   </section>
-</div>
 
   <!-- footer -->
 
   <div class="footer footer-copyright">
-    <p>© Rita Markgraf 2021 | <a href="" data-modal="#modal2" class="modal__trigger">Impressum</a></p>
+    <p><a href="" data-modal="#modal1" class="modal__trigger">© Rita Markgraf 2021</a>  | <a href="" data-modal="#modal2" class="modal__trigger">Impressum</a></p>
   </div>
 
-  <!-- impressum modal -->
+<!-- Datenschutz Modal  -->
 
+  <div id="modal1" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1 class="modalh1">Datenschutzerklärung</h1>
+        <h3 class="modalh3">1. DATENSCHUTZ AUF EINEN BLICK</h3>
+        <h3 class="modalh3">ALLGEMEINE HINWEISE</h3>
+        <p class="modalp">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie
+        unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+        Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten
+        Datenschutzerklärung.</p>
+        <h3 class="modalh3">DATENERFASSUNG AUF DIESER WEBSITE</h3>
+        <h3 class="modalh3">WER IST VERANTWORTLICH FÜR DIE DATENERFASSUNG AUF DIESER WEBSITE?</h3>
+        <p class="modalp">Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem
+        Impressum dieser Website entnehmen.</p>
+        <h3 class="modalh3">WIE ERFASSEN WIR IHRE DATEN?</h3>
+        <p class="modalp">Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln,
+        die Sie ins Kontaktformular eingeben.
+        Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische
+        Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt
+        automatisch, sobald Sie unsere Website betreten.</p>
+        <h3 class="modalh3">WOFÜR NUTZEN WIR IHRE DATEN?</h3>
+        <p class="modalp">Die Daten wird ausschließlich dazu erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Es werden
+        KEINE DATEN zur Analyse Ihres Nutzerverhaltens verwendet.</p>
+        <h3 class="modalh3">WELCHE RECHTE HABEN SIE BEZÜGLICH IHRER DATEN?</h3>
+        <p class="modalp">Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten
+        personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten
+        zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum
+        angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+        <h3 class="modalh3">2. ALLGEMEINE HINWEISE UND PFLICHTINFORMATIONEN</h3>
+        <h3 class="modalh3">DATENSCHUTZ</h3>
+        <p class="modalp">Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen
+        Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+        Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten,
+        mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir
+        erheben und wofür wir sie nutzen.
+        Sie erläutert auch, wie und zu welchem Zweck das geschieht. Wir weisen darauf hin, dass die Datenübertragung im Internet
+        (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem
+        Zugriff durch Dritte ist nicht möglich.</p>
+        <h3 class="modalh3">HINWEIS ZUR VERANTWORTLICHEN STELLE</h3>
+        <p class="modalp">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist
+        Rita Markgraf
+        Seeriederstr. 14a
+        81675 München
+        089/4481681
+        info@ritamarkgraf.de
+
+        Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke
+        und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o.ä.) entscheidet.
+        </p>
+        <h3 class="modalh3">SSL- BZW. TLS-VERSCHLÜSSELUNG</h3>
+        <p class="modalp">Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel
+        Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung
+        erkennen Sie daran, dass die Adresszeile des Browsers von "https: //" auf "https:/" wechselt und an dem Schloss-Symbol
+        in Ihrer Browserzeile. Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns
+        übermitteln, nicht von Dritten mitgelesen werden.</p>
+        <h3 class="modalh3">WIDERSPRUCH GEGEN WERBE-MAILS</h3>
+        <p class="modalp">Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich
+        angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich
+        ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails,
+        vor.</p>
+        <h3 class="modalh3">3. DATENERFASSUNG DIESER WEBSITE</h3>
+        <h3 class="modalh3">COOKIES</h3>
+        <p class="modalp">Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Diese Webseite
+        verwendet KEINE Cookies.</p>
+        <h3 class="modalh3">ANFRAGE PER E-MAIL, TELEFON ODER TELEFAX</h3>
+        <p class="modalp">Wenn Sie uns per E-Mail. Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden
+        personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet.
+        Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+        Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der
+        Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen
+        übrigen Fällen beruht die Verarbeitung auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und / oder auf unseren
+        berechtigten Interessen (Art. 6 Abs. 1 lit. f DSGVO), da wir ein berechtigtes Interesse an der effektiven Bearbeitung
+        der an uns gerichteten Anfragen haben.
+        Die von Ihnen an uns über das Kontaktformular übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern,
+        Ihre Einwilligung zur Speicherung widerrufen oder der Zweck for die Datenspeicherung entfällt (z. B. nach
+        abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen - insbesondere gesetzliche
+        Aufbewahrungsfristen - bleiben unberührt.</p>
+        <!-- modal close button -->
+        <a href="#kontakt" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path
+              d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Impressum Modal  -->
   <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
     <div class="modal__dialog">
       <div class="modal__content">
@@ -252,11 +346,47 @@
         <h3 class="modalh3">Kontakt</h3>
         <p class="modalp">Telefon: 089/4481681<br />
                           E-Mail: info@ritamarkgraf.de</p>
-        <h3 class="modalh3">Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h3>
-        <p class="modalp">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+
+        <h3 class="modalh3">Streitschlichtung</h3>
+        <p class="modalp">Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+          https://ec.europa.eu/consumers/odr
+          Unsere E-Mail-Adresse finden Sie oben im Impressum.
+          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
           teilzunehmen.</p>
 
-        <p class="modalp">Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a></p>
+        <h3 class="modalh3">Haftung für Inhalte</h3>
+        <p class="modalp">Als Dienstanbieter sind wir gemäß $ 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+          allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Dienstanbieter jedoch nicht verpflichtet, übermittelte oder
+          gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+          Tätigkeit hinweisen.
+          Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben
+          hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
+          Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+          Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb
+          können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Fur die Inhalte der verlinkten Seiten ist stets der
+          jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der
+          Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+          Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
+          Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+
+        <h3 class="modalh3">Urheberrecht</h3>
+        <p class="modalp">
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+          Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
+          bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur
+          für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter
+          beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+          Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden
+          wir derartige Inhalte umgehend entfernen.
+        </p>
+        <h3 class="modalh3">Schutzrechtsverletzung</h3>
+        <p class="modalp">Keine Abmahnung ohne vorherigen Kontakt! Sollte der Inhalt oder die Aufmachung dieser Website
+          gesetzliche Bestimmungen oder Rechte Dritter verletzen, bitten wir um eine entsprechende Nachricht ohne Kostennote.
+          Wir versichern, dass zu Recht beanstandete Passagen unverzüglich entfernt oder berichtigt werden, ohne dass von
+          Ihrer Seite die Einschaltung eines Rechtheistandes erforderlich wird. Die zeitaufwändigere Einschaltung eines
+          Anwaltes, das für den Dienstanbieter zur kostenpflichtigen Abmahnung führt, entspricht nicht wirklichem oder mutmaßlichem
+          Willen des Schutzrechtinhabers. Entstandene Kosten ohne vorherige Kontaktaufnahme werden vollumfänglich zurückgewiesen und
+          lösen gegebenenfalls eine Gegenklage wegen Verletzung vorgenannter Bestimmungen aus.</p>
 
         <!-- modal close button -->
         <a href="#kontakt" class="modal__close demo-close">
