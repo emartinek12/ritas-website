@@ -7,6 +7,10 @@ nav {
   padding: 10px 80px 4px;
 }
 
+.logo-rita {
+  display: none;
+}
+
 nav ul {
   width: 100%;
   text-align: center;
@@ -60,14 +64,6 @@ nav ul li.active a {
 }
 
 @media only screen and (max-width: 768px) {
-  /* nav .container {
-  padding: 8px 8px;
-} */
-
-  /* nav .container ul li a {
-    padding: 10px 5px;
-  } */
-
   i {
     position: absolute;
     right: 0;
@@ -76,7 +72,14 @@ nav ul li.active a {
 
   nav {
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.799);
+    background-color: transparent;
+  }
+
+  .logo-rita {
+    display: block;
+    width: 175px;
+    padding-top: 10px;
+    z-index: -1;
   }
 
   .hamburger {
@@ -87,7 +90,8 @@ nav ul li.active a {
     display: none;
     flex-direction: column;
     align-items: end;
-    margin-top: 50px;
+    margin-bottom: 0px;
+    /* margin-top: 50px; */
   }
 
   nav ul li.active {
@@ -101,10 +105,6 @@ nav ul li.active a {
   .nav-ul.show {
     display: flex;
   }
-
-  /* .nav-item.show {
-    display: block;
-  } */
 }
 
 
