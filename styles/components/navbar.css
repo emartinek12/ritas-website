@@ -37,12 +37,12 @@ nav  ul li a:hover{
   color: black;
 }
 
-nav  ul li.active {
+nav ul li.active {
   background-color: orange;
   border-radius:30px;
   transition: 0.3s;
 }
-nav  ul li.active a {
+nav ul li.active a {
   color: #ffffff;
 }
 
@@ -67,6 +67,16 @@ nav  ul li.active a {
     padding: 10px 5px;
   } */
 
+  i {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+  }
+
+  nav {
+    padding-top: 0px;
+  }
+
   .hamburger {
     display: block;
   }
@@ -74,6 +84,12 @@ nav  ul li.active a {
   .nav-ul {
     display: none;
     flex-direction: column;
+    align-items: end;
+  }
+
+  nav ul li.active {
+    width: fit-content;
+    position: center;
   }
 
   button {
@@ -82,6 +98,10 @@ nav  ul li.active a {
   .nav-ul.show {
     display: flex;
   }
+
+  /* .nav-item.show {
+    display: block;
+  } */
 }
 
 
@@ -89,4 +109,5 @@ nav  ul li.active a {
   nav .container ul li a {
     font-size: 15px;
   }
+
 }
