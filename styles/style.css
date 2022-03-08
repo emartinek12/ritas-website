@@ -364,7 +364,6 @@ section{
 /* applying mobile styling */
 
 @media only screen and (max-width: 768px) {
-
   .container-home {
     display: block;
     width: 90%;
@@ -379,9 +378,18 @@ section{
     display: none;
   }
 
+  #homepage {
+    height: 100%;
+  }
+
   .image-homepage {
-    width: 64%;
+    width: 80%;
     margin-bottom: 20px;
+  }
+
+  .container-home .description {
+    font-size: 31px;
+
   }
 
   .rita-flute {

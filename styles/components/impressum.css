@@ -145,7 +145,11 @@
   .demo-btns .modal__trigger {
     margin-bottom: 0.8rem;
   }
+
+  .footer p {
+  font-size: 12px;
 }
+
 .demo-close {
   position: absolute;
   top: 0;
@@ -164,4 +168,5 @@
 }
 .demo-close:hover {
   background: rgba(0,0,0,0.6);
+}
 }
